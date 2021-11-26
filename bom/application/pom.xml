@@ -4440,16 +4440,28 @@
                 <groupId>org.wildfly.security</groupId>
                 <artifactId>wildfly-elytron-realm-token</artifactId>
                 <version>${wildfly-elytron.version}</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>org.slf4j</groupId>
+                        <artifactId>jcl-over-slf4j</artifactId>
+                    </exclusion>
+                </exclusions>
             </dependency>
             <dependency>
-              <groupId>org.wildfly.security</groupId>
-              <artifactId>wildfly-elytron-realm-jdbc</artifactId>
-              <version>${wildfly-elytron.version}</version>
+                <groupId>org.wildfly.security</groupId>
+                <artifactId>wildfly-elytron-realm-jdbc</artifactId>
+                <version>${wildfly-elytron.version}</version>
             </dependency>
             <dependency>
-              <groupId>org.wildfly.security</groupId>
-              <artifactId>wildfly-elytron-realm-ldap</artifactId>
-              <version>${wildfly-elytron.version}</version>
+                <groupId>org.wildfly.security</groupId>
+                <artifactId>wildfly-elytron-realm-ldap</artifactId>
+                <version>${wildfly-elytron.version}</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>org.slf4j</groupId>
+                        <artifactId>jcl-over-slf4j</artifactId>
+                    </exclusion>
+                </exclusions>
             </dependency>
             <dependency>
                 <groupId>org.wildfly.security</groupId>
@@ -4490,6 +4502,12 @@
                 <groupId>org.wildfly.security</groupId>
                 <artifactId>wildfly-elytron-credential</artifactId>
                 <version>${wildfly-elytron.version}</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>org.slf4j</groupId>
+                        <artifactId>jcl-over-slf4j</artifactId>
+                    </exclusion>
+                </exclusions>
             </dependency>
             <dependency>
                 <groupId>org.wildfly.security</groupId>
